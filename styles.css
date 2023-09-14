@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+body {
+    background: url('./assets/bg.jpg') ;
+    background-size: cover;
+    background-position: center center;
+}
+
+.countdown-heading, .holidays-heading,
+.countdown-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.holidays {
+    background: url('./assets/bg2.jpg');
+    /* background-blend-mode: ; */
+    /* opacity: 50%; */
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holidays-container {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    opacity: 60%;
+    box-shadow: 1px 1px 5px 5px aliceblue;
+    width: 60%;
+    /* margin: 2%; */
+    /* max-width: ; */
+}
+
+.holidays-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+
+.holidays-list > li {
+    flex: 35%;
+    list-style: none;
+    letter-spacing: 3px;
+    margin: 15px 0px 15px 0px;
+    /* max-width: ; */
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    /* width: 50%; */
+}
+
+.holidays-list > li:hover {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    /* max-width: fit-content; */
+
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: large;
+}
+#year-id {
+    letter-spacing: 15px;
+    margin-left: 20px;
+}
+.countdown-data h1 {
+    margin: 1%;
+    padding: 1%;
+}
+.countdown-data :nth-child(odd) {
+    font-size: 40px;
+}
+.countdown-data :nth-child(even) {
+    font-size: 20px;
+    opacity: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+}
+
